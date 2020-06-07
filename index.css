@@ -112,9 +112,9 @@ body, button, input {
   flex-direction: column;
   position: relative;
   color: #ea1d6f;
-  font-size: 31px;
-  top: -3%;
-  left: 12%;
+  font-size: 38px;
+    top: -9%;
+    left: 12%;
   font-family: 'Do Hyeon', sans-serif;
 }
 
