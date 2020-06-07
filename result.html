@@ -7,6 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+<style>
+    .app-title{
+        left: 102%;
+    }
+</style>
 <body>
     <div class="background">
         <div class="container">
@@ -24,9 +29,10 @@
               </div>
             </div>
             <div class="screen-body">
+                
               <div class="screen-body-item left">
                 <div class="app-title">
-                  <span>Group Scheduler</span>
+                  <span>Result</span>
                   
                 </div>
                 <div class="app-contact"></div>
@@ -34,33 +40,24 @@
               <div class="screen-body-item">
                 <div class="app-form">
                   <div class="app-form-group">
-                     언제부터?
-                     <input class="app-form-control" placeholder="NAME" type="date" id="startdate" value="2020-01-01" min="2020-06-01" max="2020-12-31">
-                  </div>
-                  <div class="app-form-group">
-                      언제까지?
-                      <input class="app-form-control" placeholder="NAME" type="date" id="enddate" value="2020-01-01" min="2020-06-01" max="2020-12-31">
+                    <div class="kundregister_grid_full" style="height: 240px;">
+                       
+                       </div>
+                     
+                    
                   </div>
                   <div class="app-form-group">
                       
-                      몇명이서?
-                    <select class="app-form-control">
-                        <option value="0">===선택하세요===</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10 명이상?</option>
-                    </select>
+                   
+                  </div>
+                  <div class="app-form-group">
+                      
+                      
+                    
                   </div>
                   
                   <div class="app-form-group buttons">
-                    <button class="app-form-button" onclick="location.href='caltest.html'" >Next</button>
+                    <button class="app-form-button" onclick="location.href='caltest.html'">Prev</button>
                     
                   </div>
                 </div>
@@ -82,7 +79,6 @@
             </a>
           </div>
         </div>
-        <script src="index.js"></script>
       </div>
 </body>
 </html>

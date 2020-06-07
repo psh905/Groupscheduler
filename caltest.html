@@ -1,21 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CAL_test : js적용</title>
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
     <div class="background">
         <div class="container">
-          <div class="screen">
+          <div class="screen" >
             <div class="screen-header">
               <div class="screen-header-left">
                 <div class="screen-header-button close"></div>
                 <div class="screen-header-button maximize"></div>
                 <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-title">
+                <span style="color:white;">Calendar</span>
               </div>
               <div class="screen-header-right">
                 <div class="screen-header-ellipsis"></div>
@@ -26,42 +30,31 @@
             <div class="screen-body">
               <div class="screen-body-item left">
                 <div class="app-title">
-                  <span>Group Scheduler</span>
-                  
+                  <span id="app-title">2020-06</span>
                 </div>
                 <div class="app-contact"></div>
               </div>
-              <div class="screen-body-item">
+              <div class="screen-body-item" >
+                <div class="calendar-wrap">
+                    <table class="calendar">
+                      <thead>
+                        <tr class = weekdays>
+                            <td> 일 </td>
+                            <td> 월 </td>
+                            <td> 화 </td>
+                            <td> 수 </td>
+                            <td> 목 </td>
+                            <td> 금 </td>
+                            <td> 토 </td>
+                        </tr>
+                      </thead>
+                      <tbody id="calendar-body"></tbody>
+                    </table>
+                </div>
                 <div class="app-form">
-                  <div class="app-form-group">
-                     언제부터?
-                     <input class="app-form-control" placeholder="NAME" type="date" id="startdate" value="2020-01-01" min="2020-06-01" max="2020-12-31">
-                  </div>
-                  <div class="app-form-group">
-                      언제까지?
-                      <input class="app-form-control" placeholder="NAME" type="date" id="enddate" value="2020-01-01" min="2020-06-01" max="2020-12-31">
-                  </div>
-                  <div class="app-form-group">
-                      
-                      몇명이서?
-                    <select class="app-form-control">
-                        <option value="0">===선택하세요===</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10 명이상?</option>
-                    </select>
-                  </div>
-                  
                   <div class="app-form-group buttons">
-                    <button class="app-form-button" onclick="location.href='caltest.html'" >Next</button>
-                    
+                    <button class="app-form-button" onclick="location.href='index.html'">Prev</button>
+                    <button class="app-form-button" onclick="location.href='result.html'">Next</button>
                   </div>
                 </div>
               </div>
@@ -82,8 +75,8 @@
             </a>
           </div>
         </div>
-        <script src="index.js"></script>
       </div>
+      <script src="caltest.js"></script>
 </body>
 </html>
 
